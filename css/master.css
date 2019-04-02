@@ -4,11 +4,13 @@ body {
   margin: 0;
 }
 
+/* Navigation bar */
 #nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  user-select: none;
 }
 
 #navLogo>h1 {
@@ -43,4 +45,34 @@ body {
 
 #navLink>a:last-child {
   margin-right: 6em;
+}
+
+/* Slider */
+#companyI {
+  background-image:
+}
+
+#sensingC {
+  background-image:
+}
+
+#troubleG {
+  background-image:
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider>figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider>figure>img {
+  width: 20%;
+  float: left;
 }
