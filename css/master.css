@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|PT+Sans|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|PT+Sans|Playfair+Display|Hammersmith+One');
 
 body {
   margin: 0;
@@ -13,7 +13,7 @@ body {
   user-select: none;
 }
 
-#navLogo>h1 {
+#navLogo h1 {
   font-family: 'Black Ops One';
   margin: 0;
   padding: 0 2em;
@@ -28,36 +28,36 @@ body {
   padding: .5em 2em;
 }
 
-#navLink>a {
+#navLink a {
   padding: .25em 1em;
   color: #1a237e;
   text-decoration: none;
 }
 
-#navLink>a:hover {
+#navLink a:hover {
   text-decoration: underline;
 }
 
-#navLink>a:first-child {
+#navLink a:first-child {
   padding-left: 2em;
   border-left: .75em solid #1a237e;
 }
 
-#navLink>a:last-child {
+#navLink a:last-child {
   margin-right: 6em;
 }
 
 /* Slider */
 .companyI {
-  background-image: url(../img/website/interest.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/website/interest.png);
 }
 
 .sensingC {
-  background-image: url(../img/website/sensing.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/website/sensing.png);
 }
 
 .troubleG {
-  background-image: url(../img/website/trouble.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/website/trouble.png);
 }
 
 #slider {
@@ -65,7 +65,7 @@ body {
   height: 40vw;
 }
 
-#slider>figure {
+#slider figure {
   position: relative;
   width: 500%;
   margin: 0;
@@ -74,12 +74,18 @@ body {
   height: 100%;
 }
 
-#slider>figure>a {
+#slider figure a {
   width: 20%;
   float: left;
   height: 100%;
   background-position: center;
   background-size: cover;
+  text-align: center;
+  font-family: 'Playfair display';
+  font-size: 3vw;
+  line-height: 40vw;
+  text-decoration: none;
+  color: white;
 }
 
 @keyframes slider {
@@ -110,4 +116,68 @@ body {
   100% {
     left: -300%;
   }
+}
+
+/* Index content */
+.title {
+  font-family: 'Hammersmith One';
+  font-size: 4vw;
+  text-align: center;
+  user-select: none;
+  margin: 0;
+  padding: 2vw;
+}
+
+.subTitle {
+  margin: 0;
+  font-family: 'Hammersmith One';
+  font-size: 2vw;
+  text-align: center;
+  user-select: none;
+}
+
+#skillsTitle {
+  font-family: 'Hammersmith One';
+  font-size: 3em;
+  margin: .5em 5em;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 16em;
+  margin-top: 0;
+}
+
+.skill {
+  background-color: #eeeeee;
+  width: 25%;
+}
+
+.skill img {
+  max-width: 100%;
+}
+
+.skillDes {
+  margin: 0 1em;
+}
+
+.skillDes h3 {
+  font-family: 'Playfair Display';
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.skillDes h4 {
+  font-family: 'PT Sans';
+  margin: 0;
+  text-align: center;
+}
+
+.skillDes p {
+  font-family: 'PT Sans';
+  margin: 1em 1.5em;
+  font-size: 1.1em;
+  margin-bottom: 2em;
 }
