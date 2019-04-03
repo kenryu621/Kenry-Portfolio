@@ -48,20 +48,21 @@ body {
 }
 
 /* Slider */
-#companyI {
-  background-image:
+.companyI {
+  background-image: url(../img/website/interest.png);
 }
 
-#sensingC {
-  background-image:
+.sensingC {
+  background-image: url(../img/website/sensing.png);
 }
 
-#troubleG {
-  background-image:
+.troubleG {
+  background-image: url(../img/website/trouble.png);
 }
 
 #slider {
   overflow: hidden;
+  height: 40vw;
 }
 
 #slider>figure {
@@ -69,10 +70,44 @@ body {
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 20s slider infinite;
+  animation: 12s slider infinite;
+  height: 100%;
 }
 
-#slider>figure>img {
+#slider>figure>a {
   width: 20%;
   float: left;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  28.3% {
+    left: 0;
+  }
+
+  33.3% {
+    left: -100%;
+  }
+
+  61.6% {
+    left: -100%;
+  }
+
+  66.6% {
+    left: -200%;
+  }
+
+  95% {
+    left: -200%;
+  }
+
+  100% {
+    left: -300%;
+  }
 }
