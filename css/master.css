@@ -384,10 +384,8 @@ footer {
 
 .websiteShot {
   height: 30vw;
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .websiteShot h3 {
@@ -474,7 +472,16 @@ footer {
   height: 25%;
 }
 
-/* Interest Website */
+/* Website Header */
 #interestShot {
-  background-image: url(../img/website/interest.png);
+  background-image: url(../img/interest/interest.png);
+  background-position-y: -200px;
+}
+
+#sensingShot {
+  background-image: url(../img/sensing/sensing.png);
+}
+
+#troubleShot {
+  background-image: url(../img/trouble/trouble.png);
 }
