@@ -8,6 +8,7 @@
   <title>Portfolio: Contact</title>
   <link rel="stylesheet" href="css/master.css">
   <link rel="icon" href="img/tab/contact.png">
+  <script src="./js/portfolio.js" charset="utf-8"></script>
 </head>
 
 <body onscroll="changePosition()">
@@ -30,8 +31,73 @@
       <h3>Contact</h3>
     </div>
   </div>
-  <h1 class="title"></h1>
-  <h2 class="subTitle"></h2>
+  <h1 class="title">Contact Me</h1>
+  <h2 class="subTitle">Feel Free To !</h2>
+  <div id="contactCards">
+    <div id="info">
+      <h4>Contact Info</h4>
+      <p>Yifan Yu (Kenry Yu)</p>
+      <p>4143 N Sherman St</p>
+      <p>Fresno, CA 93726</p>
+      <p>Phone: (559) 519-3062</p>
+      <a href="https://www.facebook.com/yifanyuyu">
+        <img src="img/footerIcon/fb.png" alt="Facebook Logo">
+      </a>
+      <a href="https://www.instagram.com/yifaan_yuu/">
+        <img src="img/footerIcon/ig.png" alt="Instagram Logo">
+      </a>
+      <a href="https://www.linkedin.com/in/yifan-yu-b17b1782/">
+        <img src="img/footerIcon/in.png" alt="LinkedIn Logo">
+      </a>
+    </div>
+    <div id="form">
+      <h4>Contact Form</h4>
+      <form action="POST" data-netlify="true">
+        <div class="halfInput">
+          <div class="Input">
+            <label for="name"><b>Your Name:</b></label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="Input">
+            <label for="email"><b>Your Email:</b></label>
+            <input type="text" name="email" id="email">
+          </div>
+        </div>
+        <div class="fullInput">
+          <label for="message"><b>Your Message:</b></label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="footerCol">
+      <h1>KY</h1>
+      <h2>KENRY YU</h2>
+    </div>
+    <div class="footerCol">
+      <a href="index.html">Home Page</a>
+      <a href="interest.html">Scholarship</a>
+      <a href="sensing.html">Sensing Cane</a>
+      <a href="trouble.html">Trouble Game</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footerCol">
+      <h3>Follow Me</h3>
+      <div>
+        <a href="https://www.facebook.com/yifanyuyu">
+          <img src="img/footerIcon/fb.png" alt="Facebook Logo">
+        </a>
+        <a href="https://www.instagram.com/yifaan_yuu/">
+          <img src="img/footerIcon/ig.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/yifan-yu-b17b1782/">
+          <img src="img/footerIcon/in.png" alt="LinkedIn Logo">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

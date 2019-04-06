@@ -499,6 +499,7 @@ footer {
 
 #contactShot {
   background-image: url(../img/contact/contact.png);
+  background-position-y: -150px;
 }
 
 /* Skills Animation */
@@ -576,4 +577,134 @@ footer {
   100% {
     left: -200%;
   }
+}
+
+/* Contact Form */
+#contactCards {
+  display: flex;
+  margin: 5em 16em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  background-color: #1a237e;
+  color: white;
+  padding: 1em 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#info h4 {
+  font-family: 'Playfair Display';
+  text-align: center;
+  font-size: 3em;
+  margin: .5em 0;
+}
+
+#info p {
+  font-family: 'PT Sans';
+  font-size: 1.25em;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#form h4 {
+  font-family: 'Playfair Display';
+  text-align: center;
+  font-size: 4em;
+  margin: .5em 0;
+}
+
+#form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.halfInput {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Input {
+  display: flex;
+  flex-direction: column;
+}
+
+.Input:nth-child(1) {
+  margin-right: .5em;
+}
+
+.Input:nth-child(2) {
+  margin-left: .5em;
+}
+
+.Input label {
+  font-family: 'PT Sans';
+  margin: .25em 0;
+  font-size: 1.5em;
+}
+
+.Input input {
+  font-family: 'PT Sans';
+  padding: .5em 1em;
+  border-radius: .5em;
+  background-color: #d8d8d8;
+  border: none;
+  font-size: 1.25em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.Input input:focus {
+  outline: none;
+}
+
+.fullInput {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  width: 100%;
+}
+
+.fullInput label {
+  font-family: 'PT Sans';
+  margin: .25em 0;
+  font-size: 1.5em;
+}
+
+.fullInput textarea {
+  font-family: 'PT Sans';
+  padding: 1em 1em;
+  border-radius: .5em;
+  background-color: #d8d8d8;
+  border: none;
+  font-size: 1.25em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  width: 100%;
+  height: 13vw;
+}
+
+.fullInput textarea:focus {
+  outline: none;
+}
+
+#submit {
+  padding: .75em 2.25em;
+  margin-top: 1em;
+  font-family: 'PT Sans';
+  font-size: 1em;
+  border-radius: .5em;
+  border: none;
+  background-image: linear-gradient(to bottom left, #1a237e, #c8c8c8);
+  color: white;
 }
